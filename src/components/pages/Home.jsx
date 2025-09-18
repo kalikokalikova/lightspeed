@@ -33,7 +33,7 @@ export default function Home() {
           >
             hacker | artist | activist | nerd
           </Typography>
-          <Typography variant="h1" className="major-mono">
+          <Typography variant="h1" className="major-mono" sx={{ letterSpacing: "10px"}}>
             Calico Seders
           </Typography>
         </Box>
