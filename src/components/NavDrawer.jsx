@@ -1,13 +1,11 @@
 import { useState } from "react";
+import { Link } from "react-router";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import navIcon from "../assets/underpantsrat.jpg";
-import { Height } from "@mui/icons-material";
 import { Typography } from "@mui/material";
 
 const navIconStyle = {
@@ -28,26 +26,28 @@ export default function NavDrawer() {
   };
 
   const navLinks = [
-    { name: "home", url: "" },
-    { name: "about", url: "" },
-    { name: "jazz", url: "" },
-    { name: "code", url: "" },
+    { name: "home", url: "/" },
+    { name: "about", url: "/about" },
+    { name: "jazz", url: "/jazz" },
+    { name: "code", url: "/code" },
   ];
 
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
         {navLinks.map((element, index) => (
-          <ListItem key={element.name} disablePadding>
-            <ListItemButton>
-              <Typography
-                className="major-mono"
-                sx={{ textTransform: "uppercase" }}
-              >
-                {element.name}
-              </Typography>
-            </ListItemButton>
-          </ListItem>
+          <Link to={element.url}>
+            <ListItem key={element.name} disablePadding>
+              <ListItemButton>
+                <Typography
+                  className="major-mono"
+                  sx={{ textTransform: "uppercase" }}
+                >
+                  {element.name}
+                </Typography>
+              </ListItemButton>
+            </ListItem>
+          </Link>
         ))}
       </List>
     </Box>

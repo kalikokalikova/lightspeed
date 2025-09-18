@@ -1,5 +1,11 @@
+import { Box, Typography } from "@mui/material"
+import NavDrawer from "../NavDrawer"
+
 export default function Jazz() {
   return (
-    <div>Jazz</div>
+    <Box>
+      <NavDrawer/>
+      <Typography>Jazz</Typography>
+    </Box>
   )
 }

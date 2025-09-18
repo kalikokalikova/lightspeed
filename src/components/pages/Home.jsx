@@ -1,8 +1,9 @@
 import backgroundImage from "../../assets/darkwater.jpg";
 import jazzImage from "../../assets/siren.jpg";
-import codeImage from "../../assets/codes.jpg";
+import codeImage from "../../assets/code.jpg";
 import aboutImage from "../../assets/about.jpg";
 import { Box, Typography, Avatar } from "@mui/material";
+import { Link } from 'react-router';
 import NavDrawer from "../NavDrawer";
 
 export default function Home() {
@@ -38,10 +39,10 @@ export default function Home() {
         </Box>
       </Box>
 
-      <Box sx={{ display: "flex", justifyContent: "space-evenly" }}>
-        <Box><Avatar sx={{ width: 250, height: 250, border: "18px red dotted" }} alt="jazz" src={aboutImage} /></Box>
-        <Box><Avatar sx={{ width: 250, height: 250, border: "18px red dotted" }} alt="jazz" src={jazzImage} /></Box>
-        <Box><Avatar sx={{ width: 250, height: 250, border: "18px red dotted" }} alt="jazz" src={codeImage} /></Box>
+      <Box sx={{ display: "flex", justifyContent: "space-evenly", marginTop: "170px" }}>
+        <Link to="/about"><Avatar sx={{ width: 250, height: 250, border: "18px red dotted" }} alt="about" src={aboutImage} /></Link>
+        <Link to="/jazz"><Avatar sx={{ width: 250, height: 250, border: "18px red dotted" }} alt="jazz" src={jazzImage} /></Link>
+        <Link to="/code"><Avatar sx={{ width: 250, height: 250, border: "18px red dotted" }} alt="code" src={codeImage} /></Link>
       </Box>
     </Box>
   );
