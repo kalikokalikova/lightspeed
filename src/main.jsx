@@ -8,6 +8,7 @@ import Home from "./components/pages/Home.jsx";
 import About from "./components/pages/About.jsx";
 import Jazz from "./components/pages/Jazz.jsx";
 import Codes from "./components/pages/Codes.jsx";
+import Love from "./components/pages/Love.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "code",
         element: <Codes/>
+      },
+      {
+        path: "love",
+        element: <Love />
       }
     ],
   },
