@@ -21,7 +21,7 @@ export default function Love() {
         handful of our closest friends, Evan Bucy and I were married.{" "}
       </Box>
       <Box>
-        <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+        {/* <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>
               <img
@@ -32,7 +32,7 @@ export default function Love() {
               />
             </ImageListItem>
           ))}
-        </ImageList>
+        </ImageList> */}
       </Box>
     </Box>
   );

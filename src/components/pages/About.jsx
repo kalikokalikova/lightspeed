@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import backgroundImage from "../../assets/about.jpg";
+import backgroundImage from "../../assets/pixel-mugshot-15.jpg";
 import NavDrawer from "../NavDrawer";
 
 export default function About() {
@@ -28,7 +28,7 @@ export default function About() {
           sx={{
             width: "500px",
             color: "gray",
-            backgroundColor: "#eeeeee85",
+            backgroundColor: "#eeeeeead",
             borderRadius: "10px",
             margin: "10px",
             padding: "20px",
@@ -56,22 +56,21 @@ export default function About() {
             Washington with top honors.
           </Typography>
           <Typography sx={paragraphStyle}>
-            At the ripe age of 42, with no musical background whatsoever, she
-            decided to become a musician and chose to play the double bass,
-            because it's the coolest instrument. This has turned out to be one
-            of the best decisions she ever made. By day she builds digital tools
-            for labor organizing, and by night she plays in a seven-piece all
-            ladies jazz band (The Midnight Sirens), the quartet offshoot of
-            same, and at least one secret band.
+            After more than 20 years of devotion to lindy hop and other vintage
+            vernacular African American dances, she decided to become a musician
+            and picked up the double bass. Her main musical inspiration is
+            swinging jazz of the 1930s, but she is also influenced by the
+            pre-swing New Orleans trad sound, the traditional rhythms and dances
+            of Guinea, and protest punk brass bands. By day she builds digital
+            tools for labor organizing, and by night she plays in a seven-piece
+            all ladies jazz band (The Midnight Sirens), the quartet offshoot of
+            same, and at least one secret band. She is eternally grateful for
+            the community of jazz weirdos and music nerds who have embraced her.
           </Typography>
+
           <Typography sx={paragraphStyle}>
-            Inspired by the music of lindy hop, traditional Guinean drumming, and
-            protest punk brass bands, she is eternally grateful for the
-            community of jazz weirdos and music nerds who have embraced her.
-          </Typography>
-          <Typography sx={paragraphStyle}>
-            Calico lives in Seattle, and can never leave the Pacific Northwest
-            because she is a rare species of mushroom.
+            Calico currently lives in Seattle, and can never leave the Pacific
+            Northwest because she is a rare species of mushroom.
           </Typography>
           <Typography sx={paragraphStyle}>
             She loves both coffee and tea but if she had to choose, she'd choose
