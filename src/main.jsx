@@ -6,7 +6,7 @@ import App from "./App.jsx";
 
 import Home from "./components/pages/Home.jsx";
 import About from "./components/pages/About.jsx";
-import Jazz from "./components/pages/Jazz.jsx";
+import Jazz from "./components/pages/jazz/Jazz.jsx";
 import Codes from "./components/pages/Codes.jsx";
 import Love from "./components/pages/Love.jsx";
 

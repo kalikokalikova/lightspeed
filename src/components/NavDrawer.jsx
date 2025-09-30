@@ -30,6 +30,7 @@ export default function NavDrawer() {
     { name: "about", url: "/about" },
     { name: "jazz", url: "/jazz" },
     { name: "code", url: "/code" },
+    { name: "love", url: "/love" },
   ];
 
   const DrawerList = (
