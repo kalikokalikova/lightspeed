@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Herculanum' !important;
+
+  /* Set the src to your .ttf file */
+  src: url('./fonts/Herculanum-Regular.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}

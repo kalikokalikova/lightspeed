@@ -104,3 +104,8 @@ h6 {
   font-weight: 400;
   font-style: normal;
 }
+
+.herculanum {
+  font-family: 'Herculanum', serif !important;
+  font-size: 2.5em;
+}

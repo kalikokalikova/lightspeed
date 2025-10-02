@@ -119,7 +119,7 @@ export default function Jazz() {
           </Collapse>
         </List>
       </Box>
-      <Box>
+      <Box sx={{ width: "50%" }}>
         <Panel view={view} />
       </Box>
     </Box>
