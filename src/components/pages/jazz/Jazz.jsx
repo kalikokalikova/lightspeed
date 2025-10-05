@@ -19,8 +19,6 @@ import Gorgon from "./Gorgon";
 import DanceImages from "./DanceImages";
 import DanceVideos from "./DanceVideos";
 
-// transform: rotate(22deg);
-
 const backgroundStyle = {
   backgroundImage: `url(${backgroundImage})`,
   // backgroundRepeat: "no-repeat",
@@ -32,9 +30,6 @@ const backgroundStyle = {
   // backgroundAttachment: "fixed",
   // paddingBottom: "100px",
   width: "50%",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
 };
 
 export default function Jazz() {
@@ -50,7 +45,7 @@ export default function Jazz() {
     setMusicOpen(!musicOpen);
   };
 
-  const Panel = ({view}) => {
+  const Panel = ({ view }) => {
     if (view === "gorgon") {
       return <Gorgon />;
     } else if (view === "danceImages") {
@@ -66,59 +61,92 @@ export default function Jazz() {
     <Box sx={{ display: "flex" }}>
       <NavDrawer />
       <Box sx={backgroundStyle}>
-        <List
-          sx={{
-            width: "100%",
-            maxWidth: 360,
-            bgcolor: "#ffffffcf",
-            borderRadius: "8px",
-            color: "blue",
-          }}
-          component="nav"
-          aria-labelledby="nested-list-subheader"
-        >
-          <ListItemButton onClick={handleMusicClick}>
-            <ListItemText primary="Music" />
-            {musicOpen ? <ExpandLess /> : <ExpandMore />}
-          </ListItemButton>
-          <Collapse in={musicOpen} timeout="auto" unmountOnExit>
-            <List component="div" disablePadding>
-              <ListItemButton sx={{ pl: 4 }} onClick={() => setView("sirens")}>
-                <ListItemIcon>
-                  <StarBorder />
-                </ListItemIcon>
-                <ListItemText primary="The Midnight Sirens" />
-              </ListItemButton>
-              <ListItemButton sx={{ pl: 4 }} onClick={() => setView("gorgon")}>
-                <ListItemIcon>
-                  <StarBorder />
-                </ListItemIcon>
-                <ListItemText primary="Gorgon" />
-              </ListItemButton>
-            </List>
-          </Collapse>
-          <ListItemButton onClick={handleDanceClick}>
-            <ListItemText primary="Dance" />
-            {danceOpen ? <ExpandLess /> : <ExpandMore />}
-          </ListItemButton>
-          <Collapse in={danceOpen} timeout="auto" unmountOnExit>
-            <List component="div" disablePadding>
-              <ListItemButton sx={{ pl: 4 }} onClick={() => setView("danceImages")}>
-                <ListItemIcon>
-                  <StarBorder />
-                </ListItemIcon>
-                <ListItemText primary="Images" />
-              </ListItemButton>
-              <ListItemButton sx={{ pl: 4 }} onClick={() => setView("danceVideos")}>
-                <ListItemIcon>
-                  <StarBorder />
-                </ListItemIcon>
-                <ListItemText primary="Videos" />
-              </ListItemButton>
-            </List>
-          </Collapse>
-        </List>
+
+      <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "150px" }}>
+          <List
+            sx={{
+              width: "100%",
+              maxWidth: 360,
+              bgcolor: "#ffffffcf",
+              borderRadius: "8px",
+              color: "blue",
+              marginBottom: "40px"
+            }}
+            component="nav"
+            aria-labelledby="nested-list-subheader"
+          >
+            <ListItemButton onClick={handleMusicClick}>
+              <ListItemText primary="Music" />
+              {musicOpen ? <ExpandLess /> : <ExpandMore />}
+            </ListItemButton>
+            <Collapse in={musicOpen} timeout="auto" unmountOnExit>
+              <List component="div" disablePadding>
+                <ListItemButton
+                  sx={{ pl: 4 }}
+                  onClick={() => setView("sirens")}
+                >
+                  <ListItemIcon>
+                    <StarBorder />
+                  </ListItemIcon>
+                  <ListItemText primary="The Midnight Sirens" />
+                </ListItemButton>
+                <ListItemButton
+                  sx={{ pl: 4 }}
+                  onClick={() => setView("gorgon")}
+                >
+                  <ListItemIcon>
+                    <StarBorder />
+                  </ListItemIcon>
+                  <ListItemText primary="Gorgon" />
+                </ListItemButton>
+              </List>
+            </Collapse>
+            <ListItemButton onClick={handleDanceClick}>
+              <ListItemText primary="Dance" />
+              {danceOpen ? <ExpandLess /> : <ExpandMore />}
+            </ListItemButton>
+            <Collapse in={danceOpen} timeout="auto" unmountOnExit>
+              <List component="div" disablePadding>
+                <ListItemButton
+                  sx={{ pl: 4 }}
+                  onClick={() => setView("danceImages")}
+                >
+                  <ListItemIcon>
+                    <StarBorder />
+                  </ListItemIcon>
+                  <ListItemText primary="Images" />
+                </ListItemButton>
+                <ListItemButton
+                  sx={{ pl: 4 }}
+                  onClick={() => setView("danceVideos")}
+                >
+                  <ListItemIcon>
+                    <StarBorder />
+                  </ListItemIcon>
+                  <ListItemText primary="Videos" />
+                </ListItemButton>
+              </List>
+            </Collapse>
+          </List>
+
+          <Box sx={{ width: "70%"}}>
+              <iframe
+                loading="lazy"
+                style={{
+                  width: "100%",
+                  height: "100vh",
+                  border: "none",
+                  marginTop: "30px",
+                }}
+                src="https://www.canva.com/design/DAG0rQBkg_c/cvacbbyqss9Ne_KgDBkENw/view?embed"
+                allowfullscreen="allowfullscreen"
+                allow="fullscreen"
+              ></iframe>
+          </Box>
+        </Box>
+
       </Box>
+
       <Box sx={{ width: "50%" }}>
         <Panel view={view} />
       </Box>
