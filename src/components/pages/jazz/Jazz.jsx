@@ -19,19 +19,6 @@ import Gorgon from "./Gorgon";
 import DanceImages from "./DanceImages";
 import DanceVideos from "./DanceVideos";
 
-const backgroundStyle = {
-  backgroundImage: `url(${backgroundImage})`,
-  // backgroundRepeat: "no-repeat",
-  minHeight: "100vh",
-  // display: "flex",
-  // flexDirection: "column",
-  // backgroundSize: "cover",
-  // backgroundPosition: "center",
-  // backgroundAttachment: "fixed",
-  // paddingBottom: "100px",
-  width: "50%",
-};
-
 export default function Jazz() {
   const [danceOpen, setDanceOpen] = useState(false);
   const [musicOpen, setMusicOpen] = useState(false);
@@ -60,17 +47,23 @@ export default function Jazz() {
   return (
     <Box sx={{ display: "flex" }}>
       <NavDrawer />
-      <Box sx={backgroundStyle}>
-
-      <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "150px" }}>
-          <List
+      <Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            marginTop: "150px",
+          }}
+        >
+          {/* <List
             sx={{
               width: "100%",
               maxWidth: 360,
               bgcolor: "#ffffffcf",
               borderRadius: "8px",
               color: "blue",
-              marginBottom: "40px"
+              marginBottom: "40px",
             }}
             component="nav"
             aria-labelledby="nested-list-subheader"
@@ -127,27 +120,11 @@ export default function Jazz() {
                 </ListItemButton>
               </List>
             </Collapse>
-          </List>
-
-          <Box sx={{ width: "70%"}}>
-              <iframe
-                loading="lazy"
-                style={{
-                  width: "100%",
-                  height: "100vh",
-                  border: "none",
-                  marginTop: "30px",
-                }}
-                src="https://www.canva.com/design/DAG0rQBkg_c/cvacbbyqss9Ne_KgDBkENw/view?embed"
-                allowfullscreen="allowfullscreen"
-                allow="fullscreen"
-              ></iframe>
-          </Box>
+          </List> */}
         </Box>
-
       </Box>
 
-      <Box sx={{ width: "50%" }}>
+      <Box>
         <Panel view={view} />
       </Box>
     </Box>

@@ -1,18 +1,22 @@
 import sirenImage from "../../../assets/sirens-header.png";
 import { Box, Typography } from "@mui/material";
 import StarBorder from "@mui/icons-material/StarBorder";
+import CanvaEmbed from "./CanvaEmbed";
 
 const textStyles = {
-  fontSize: "1.2rem", lineHeight: "1.7"
-}
+  fontSize: "1.2rem",
+  lineHeight: "1.7",
+};
 const starStyles = {
-  margin: "0 8px"
-}
+  margin: "0 8px",
+};
 
 export default function Sirens() {
   return (
     <Box sx={{ backgroundColor: "#cbccff", padding: "80px" }}>
-      <Box sx={{ display: "flex", justifyContent: "center", marginBottom: "60px" }}>
+      <Box
+        sx={{ display: "flex", justifyContent: "center", marginBottom: "60px" }}
+      >
         <img src={sirenImage} alt="Siren face with stars" />
       </Box>
 
@@ -34,7 +38,13 @@ export default function Sirens() {
           >
             Septet Lineup
           </Typography>
-          <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <Typography sx={textStyles}>Drums</Typography>
             <StarBorder sx={starStyles} />
             <Typography sx={textStyles}>Piano</Typography>
@@ -58,7 +68,13 @@ export default function Sirens() {
           >
             Quartet Lineup
           </Typography>
-          <Box sx={{ display: "flex", justifyContent: "center",alignItems: "center" }}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <Typography sx={textStyles}>Drums</Typography>
             <StarBorder sx={starStyles} />
 
@@ -68,6 +84,9 @@ export default function Sirens() {
             <StarBorder sx={starStyles} />
 
             <Typography sx={textStyles}>Banjo</Typography>
+          </Box>
+          <Box>
+            <CanvaEmbed />
           </Box>
         </Box>
       </Box>
