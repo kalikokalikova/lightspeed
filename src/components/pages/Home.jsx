@@ -1,4 +1,4 @@
-import backgroundImage from "../../assets/lightripples.jpg";
+import backgroundImage from "../../assets/magnolia.jpg";
 import jazzImage from "../../assets/siren.jpg";
 import codeImage from "../../assets/code.jpg";
 import aboutImage from "../../assets/mugshot.jpg";
@@ -16,6 +16,10 @@ export default function Home() {
     height: "100vh",
   };
 
+  const linkStyle = {
+    width: 250, height: 250, border: "1px chartreuse solid", marginBottom: "30px"
+  }
+
   return (
     <Box sx={backgroundStyle}>
       <NavDrawer />
@@ -26,6 +30,7 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-end",
+            margin: "10px",
           }}
         >
           <Typography
@@ -36,8 +41,7 @@ export default function Home() {
           </Typography>
           <Typography
             variant="h1"
-            className="major-mono"
-          sx={{ letterSpacing: "10px", marginTop: { xs: "100px", md: "0"} }}
+          sx={{ color: "darkred", letterSpacing: "10px", marginTop: { xs: "100px", md: "0"} }}
           >
             Calico Seders
           </Typography>
@@ -60,28 +64,28 @@ export default function Home() {
       >
         <Link to="/about">
           <Avatar
-            sx={{ width: 250, height: 250, border: "18px red dotted", marginBottom: "30px" }}
+            sx={linkStyle}
             alt="about"
             src={aboutImage}
           />
         </Link>
         <Link to="/code">
           <Avatar
-            sx={{ width: 250, height: 250, border: "18px red dotted", marginBottom: "30px" }}
+            sx={linkStyle}
             alt="code"
             src={codeImage}
           />
         </Link>
         <Link to="/jazz">
           <Avatar
-            sx={{ width: 250, height: 250, border: "18px red dotted", marginBottom: "30px" }}
+            sx={linkStyle}
             alt="jazz"
             src={jazzImage}
           />
         </Link>
         <Link to="/love">
           <Avatar
-            sx={{ width: 250, height: 250, border: "18px red dotted", marginBottom: "30px" }}
+            sx={linkStyle}
             alt="code"
             src={loveImage}
           />

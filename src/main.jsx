@@ -1,7 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
+import { ThemeProvider } from "@mui/material";
 import "./index.css";
+import customTheme from "./theme.js";
 import App from "./App.jsx";
 
 import Home from "./components/pages/Home.jsx";
@@ -41,6 +43,7 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider theme={customTheme}><RouterProvider router={router} /></ThemeProvider>
+
   </StrictMode>
 );

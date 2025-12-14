@@ -73,38 +73,6 @@ h6 {
   isolation: isolate;
 }
 
-.rubik {
-  font-family: "Rubik Burned", system-ui !important;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.ubuntu-sans-mono-regular {
-  font-family: "Ubuntu Sans Mono", monospace !important;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.ubuntu-sans-mono-bold {
-  font-family: "Ubuntu Sans Mono", monospace !important;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-}
-
-.offside-regular {
-  font-family: "Offside", sans-serif !important;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.major-mono {
-  font-family: "Major Mono Display", monospace !important;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .herculanum {
   font-family: 'Herculanum', serif !important;
   font-size: 2.5em;

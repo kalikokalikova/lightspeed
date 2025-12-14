@@ -1,9 +1,13 @@
 @font-face {
-  font-family: 'Herculanum' !important;
+  font-family: 'twin-peaks';
+  src: local('twin-peaks'), url('./fonts/OPTINational-Gothic.otf') format('truetype');
+  font-weight: 400; /* Define the weight/style */
+  font-style: normal;
+}
 
-  /* Set the src to your .ttf file */
-  src: url('./fonts/Herculanum-Regular.ttf') format('truetype');
-
-  font-weight: normal;
+@font-face {
+  font-family: 'ITC-AG-Gothic';
+  src: local('ITC-AG-Gothic'), url('./fonts/ITC-AG-Gothic/ITC\ Avant\ Garde\ Gothic\ Std\ Medium.otf') format('truetype');
+  font-weight: 400; /* Define the weight/style */
   font-style: normal;
 }
