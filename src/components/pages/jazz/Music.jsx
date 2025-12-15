@@ -36,8 +36,8 @@ export default function Music() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="The Midnight Sirens" {...a11yProps(0)} />
-          <Tab label="Gorgon" {...a11yProps(1)} />
+          <Tab label="The Midnight Sirens" {...a11yProps(0)} sx={{ width: "50%"}} />
+          <Tab label="Gorgon" {...a11yProps(1)} sx={{ width: "50%"}} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
