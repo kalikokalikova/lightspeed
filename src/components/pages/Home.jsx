@@ -1,7 +1,7 @@
 import backgroundImage from "../../assets/magnolia.jpg";
 import jazzImage from "../../assets/siren.jpg";
 import codeImage from "../../assets/code.jpg";
-import aboutImage from "../../assets/mugshot2.jpg";
+import aboutImage from "../../assets/garbo.jpg";
 import loveImage from "../../assets/love.jpg";
 import { Box, Typography, Avatar } from "@mui/material";
 import { Link } from "react-router";
