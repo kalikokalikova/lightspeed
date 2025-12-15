@@ -1,4 +1,4 @@
-import sirenImage from "../../../assets/sirens-header.png";
+import backgroundImage from "../../../assets/siren-face-stars.svg";
 import { Box, Typography } from "@mui/material";
 import StarBorder from "@mui/icons-material/StarBorder";
 import CanvaEmbed from "./CanvaEmbed";
@@ -11,18 +11,24 @@ const starStyles = {
   margin: "0 8px",
 };
 
+const backgroundStyle = {
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundRepeat: "no-repeat",
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundAttachment: "fixed",
+    paddingBottom: "100px",
+  };
+
 export default function Sirens() {
   return (
-    <Box sx={{ backgroundColor: "#cbccff", padding: "80px" }}>
-      <Box
-        sx={{ display: "flex", justifyContent: "center", marginBottom: "60px" }}
-      >
-        <img src={sirenImage} alt="Siren face with stars" />
-      </Box>
-
+    <Box sx={{ ...backgroundStyle, padding: "20px", backgroundColor: "#5b6293" }}>
       <Box>
         <Typography sx={textStyles}>
-          The Midnight Sirens lept fully-formed from the helmet of drummer
+          <span className="herculanum">The Midnight Sirens</span> lept fully-formed from the helmet of drummer
           Courtney H., who dreamt of leading an all ladies jazz band. Spinning
           off from Jazz Night School, the band began to coalesce at the
           beginning of 2025 and continued to accrete members. The Midnight
@@ -34,7 +40,7 @@ export default function Sirens() {
           <Typography
             variant="h4"
             className="herculanum"
-            sx={{ textAlign: "center" }}
+            sx={{ textAlign: "center", lineHeight: 1 }}
           >
             Septet Lineup
           </Typography>

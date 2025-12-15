@@ -56,7 +56,7 @@ export default function Jazz() {
             marginTop: "150px",
           }}
         >
-          {/* <List
+          <List
             sx={{
               width: "100%",
               maxWidth: 360,
@@ -120,7 +120,7 @@ export default function Jazz() {
                 </ListItemButton>
               </List>
             </Collapse>
-          </List> */}
+          </List>
         </Box>
       </Box>
 
