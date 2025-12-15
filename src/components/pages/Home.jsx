@@ -13,7 +13,7 @@ export default function Home() {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "repeat",
-    height: "100vh",
+    minHeight: "100vh",
   };
 
   const linkStyle = {
@@ -29,11 +29,11 @@ export default function Home() {
 
       {/* HEADER TEXT */}
       <Box
-        sx={{
-          backgroundColor: {
-            md: "blue",
-          },
-        }}
+        // sx={{
+        //   backgroundColor: {
+        //     md: "blue",
+        //   },
+        // }}
       >
         <Box>
           <Typography
@@ -67,9 +67,10 @@ export default function Home() {
         sx={{
           display: "flex",
           flexDirection: {xs: "column", md: "row"},
-          marginTop: {xs: "-120px", md: "300px"},
+          marginTop: {xs: "-120px"},
           alignItems: "center",
-          justifyContent: { xs: "space-evenly", md: "row"}
+          justifyContent: { xs: "space-evenly", md: "row"},
+          transform: {md: "translate(0%, 106%)"}
         }}
       >
         <Link to="/about">

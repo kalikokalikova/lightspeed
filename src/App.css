@@ -17,10 +17,25 @@
   }
 }
 
+html {
+  /* This prevents the entire viewport from shifting or scrolling due to an element inside */
+  overflow-x: hidden;
+  /* Also ensure the html element's width is strictly 100% */
+  width: 100%;
+}
+
+#root,
+#__next {
+  width: 100%;
+}
+
 body {
   color: white;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+
+  overflow-x: hidden;
+    width: 100vw;
 }
 
 /* 6. Improve media defaults */

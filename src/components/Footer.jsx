@@ -8,6 +8,13 @@ import commodeImage from "../assets/commode.png";
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
+    const iconStyle = {
+    width: "40px",
+    height: "40px",
+    marginLeft: "20px",
+    fontSize: '4rem'
+  };
+
   return (
     <Box
       sx={{
@@ -28,7 +35,7 @@ export default function Footer() {
           >
             <Avatar
               src={gorgonImage}
-              sx={{ width: "40px", height: "40px", marginLeft: "30px" }}
+              sx={iconStyle}
             />
           </a>
         </Box>
@@ -40,12 +47,8 @@ export default function Footer() {
           >
             <Avatar
               src={commodeImage}
-              sx={{
-                width: "40px",
-                height: "40px",
-                marginLeft: "30px",
-                backgroundColor: "aquamarine",
-              }}
+              sx={{...iconStyle,
+                backgroundColor: "aquamarine"}}
             />
           </a>
         </Box>
@@ -56,12 +59,9 @@ export default function Footer() {
             rel="noopener noreferrer"
           >
             <GitHubIcon
-              sx={{
-                width: "40px",
-                height: "40px",
-                marginLeft: "30px",
-                color: "mediumpurple",
-              }}
+              sx={{...iconStyle,
+                color: "mediumpurple"}}
+
             />
           </a>
         </Box>
@@ -73,10 +73,7 @@ export default function Footer() {
           >
             <EggAltIcon
               sx={{
-                width: "40px",
-                height: "40px",
-                marginLeft: "30px",
-                color: "white",
+              ...iconStyle, color: "white"
               }}
             />
           </a>
@@ -89,9 +86,7 @@ export default function Footer() {
           >
             <MailOutline
               sx={{
-                width: "40px",
-                height: "40px",
-                marginLeft: "30px",
+                ...iconStyle,
                 color: "lightblue",
               }}
             />
