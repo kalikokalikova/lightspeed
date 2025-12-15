@@ -37,12 +37,11 @@ export default function NavDrawer() {
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
         {navLinks.map((element, index) => (
-          <Link to={element.url}>
+          <Link to={element.url} style={{ textDecoration: "none"}}>
             <ListItem key={element.name} disablePadding>
               <ListItemButton>
                 <Typography
-                  className="major-mono"
-                  sx={{ textTransform: "uppercase" }}
+                  sx={{ textTransform: "uppercase", color: "darkred" }}
                 >
                   {element.name}
                 </Typography>

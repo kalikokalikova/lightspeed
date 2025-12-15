@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import backgroundImage from "../../assets/pixel-mugshot-15.jpg";
+import backgroundImage from "../../assets/mugshot2-8.jpg";
 import NavDrawer from "../NavDrawer";
 
 export default function About() {
@@ -26,13 +26,13 @@ export default function About() {
         <NavDrawer />
         <Box
           sx={{
-            width: "500px",
-            color: "gray",
-            backgroundColor: "#eeeeeead",
+            color: "white",
+            backgroundColor: "#0000002e",
             borderRadius: "10px",
             margin: "10px",
             padding: "20px",
             mt: "250px",
+            width: { md: "30%"}
           }}
         >
           <Typography
