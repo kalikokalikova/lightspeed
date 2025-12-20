@@ -34,12 +34,12 @@ export default function NavDrawer() {
   ];
 
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
-      <List>
+    <Box sx={{ width: { xs: "125px", sm: "200px"} }} role="presentation" onClick={toggleDrawer(false)}>
+      <List sx={{ padding: { xs: "30px 15px", sm: "50px 15px" }}}>
         {navLinks.map((element, index) => (
-          <Link to={element.url} style={{ textDecoration: "none"}}>
+          <Link to={element.url} style={{ textDecoration: "none" }}>
             <ListItem key={element.name} disablePadding>
-              <ListItemButton>
+              <ListItemButton sx={{ justifyContent: "center"}}>
                 <Typography
                   sx={{ textTransform: "uppercase", color: "darkred" }}
                 >
