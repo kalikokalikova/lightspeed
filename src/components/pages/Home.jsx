@@ -1,5 +1,5 @@
 import backgroundImage from "../../assets/magnolia.jpg";
-import jazzImage from "../../assets/siren.jpg";
+import jazzImage from "../../assets/gorgon.png";
 import codeImage from "../../assets/code.jpg";
 import aboutImage from "../../assets/garbo.jpg";
 import loveImage from "../../assets/love.jpg";
@@ -79,7 +79,7 @@ export default function Home() {
         <Link to="/code">
           <Avatar sx={linkStyle} alt="code" src={codeImage} />
         </Link>
-        <Link to="/jazz">
+        <Link to="/jazz/music">
           <Avatar sx={linkStyle} alt="jazz" src={jazzImage} />
         </Link>
         <Link to="/love">

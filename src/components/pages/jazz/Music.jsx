@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {Tabs, Tab, Box} from '@mui/material';
 import Sirens from "./Sirens";
+import Gorgon from "./Gorgon";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -44,7 +45,7 @@ export default function Music() {
         <Sirens/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <Gorgon/>
       </TabPanel>
 
     </Box>
