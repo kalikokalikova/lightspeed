@@ -1,42 +1,37 @@
 import { Box, Avatar, Typography } from "@mui/material";
-import EggAltIcon from "@mui/icons-material/EggAlt";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import MailOutline from "@mui/icons-material/MailOutline";
-import gorgonImage from "../assets/gorgon.png";
-import commodeImage from "../assets/commode.png";
+import gorgonImage from "../assets/footerIcons/gorgon-8bit.jpg";
+import commodeImage from "../assets/footerIcons/toilet-8bit.jpg";
+import emailImage from "../assets/footerIcons/email-8bit.jpg";
+import stonedCookingImage from "../assets/footerIcons/fried-egg-8bit.jpg";
+import githubImage from "../assets/footerIcons/github-8bit.jpg";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-    const iconStyle = {
+  const iconStyle = {
     width: "40px",
     height: "40px",
-    marginLeft: "20px",
-    fontSize: '4rem'
+    margin: "15px 15px 0 0",
   };
 
   return (
     <Box
       sx={{
         backgroundColor: "#0f0b18",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        padding: "30px",
+        padding: "25px",
       }}
     >
-      <Typography>©{currentYear}, Calico Seders.</Typography>
-      <Box sx={{ display: "flex" }}>
+      <Box>
+        <Typography>©{currentYear}, Calico Seders.</Typography>
+      </Box>
+      <Box sx={{ display: "flex", flexWrap: "wrap"}}>
         <Box>
           <a
             href="https://www.instagram.com/gorgon_songs/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Avatar
-              src={gorgonImage}
-              sx={iconStyle}
-            />
+            <Avatar src={gorgonImage} sx={iconStyle} />
           </a>
         </Box>
         <Box>
@@ -45,11 +40,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Avatar
-              src={commodeImage}
-              sx={{...iconStyle,
-                backgroundColor: "aquamarine"}}
-            />
+            <Avatar src={commodeImage} sx={iconStyle} />
           </a>
         </Box>
         <Box>
@@ -58,11 +49,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <GitHubIcon
-              sx={{...iconStyle,
-                color: "mediumpurple"}}
-
-            />
+            <Avatar src={githubImage} sx={iconStyle} />
           </a>
         </Box>
         <Box>
@@ -71,11 +58,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <EggAltIcon
-              sx={{
-              ...iconStyle, color: "white"
-              }}
-            />
+            <Avatar src={stonedCookingImage} sx={iconStyle} />
           </a>
         </Box>
         <Box>
@@ -84,12 +67,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <MailOutline
-              sx={{
-                ...iconStyle,
-                color: "lightblue",
-              }}
-            />
+            <Avatar src={emailImage} sx={iconStyle} />
           </a>
         </Box>
       </Box>
