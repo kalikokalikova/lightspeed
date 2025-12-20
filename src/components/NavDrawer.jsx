@@ -28,7 +28,7 @@ export default function NavDrawer() {
   const navLinks = [
     { name: "home", url: "/" },
     { name: "about", url: "/about" },
-    { name: "jazz", url: "/jazz" },
+    { name: "music", url: "/jazz/music" },
     { name: "code", url: "/code" },
     { name: "love", url: "/love" },
   ];

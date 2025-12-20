@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import backgroundImage from "../../assets/garbo.jpg";
+import backgroundImage from "../../assets/garbo-8bit.jpg";
 import NavDrawer from "../NavDrawer";
 
 export default function About() {

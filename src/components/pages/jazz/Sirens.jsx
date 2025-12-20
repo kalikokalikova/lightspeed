@@ -1,5 +1,6 @@
 import backgroundImage from "../../../assets/siren-face-stars.svg";
 import { Box, Typography } from "@mui/material";
+import NavDrawer from "../../NavDrawer";
 import StarBorder from "@mui/icons-material/StarBorder";
 import CanvaEmbed from "./CanvaEmbed";
 
@@ -26,7 +27,8 @@ const backgroundStyle = {
 export default function Sirens() {
   return (
     <Box sx={{ ...backgroundStyle, padding: "20px", backgroundColor: "#5b6293" }}>
-      <Box>
+      <NavDrawer />
+      <Box sx={{ marginTop: "125px"}}>
         <Typography sx={textStyles}>
           <span className="herculanum">The Midnight Sirens</span> lept fully-formed from the helmet of drummer
           Courtney H., who dreamt of leading an all ladies jazz band. Spinning
@@ -48,7 +50,7 @@ export default function Sirens() {
             sx={{
               display: "flex",
               justifyContent: "center",
-              alignItems: "center",
+              flexWrap: "wrap",
             }}
           >
             <Typography sx={textStyles}>Drums</Typography>
@@ -78,7 +80,7 @@ export default function Sirens() {
             sx={{
               display: "flex",
               justifyContent: "center",
-              alignItems: "center",
+              flexWrap: "wrap",
             }}
           >
             <Typography sx={textStyles}>Drums</Typography>
