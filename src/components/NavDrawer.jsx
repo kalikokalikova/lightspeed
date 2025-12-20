@@ -54,7 +54,7 @@ export default function NavDrawer() {
   );
 
   return (
-    <Box sx={{ position: "fixed", left: 0, top: "50px" }}>
+    <Box sx={{ position: "fixed", left: 0, top: "50px", zIndex: 10 }}>
       <Box onClick={toggleDrawer(true)} sx={navIconStyle}></Box>
       <Drawer open={open} onClose={toggleDrawer(false)}>
         {DrawerList}
