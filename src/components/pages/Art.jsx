@@ -75,19 +75,19 @@ export default function Art() {
         art
       </Typography>
 
-      <Box sx={{ margin: "0 20px" }}>
+      <Box>
         <Typography>About my art. Some more text</Typography>
         <Box>Subscribe to newslettor</Box>
 
         <Box sx={{ margin: "1.5rem 0" }}>
           {Object.entries(links).map(([key, value], index) => (
-            <Box key={index} onClick={() => handleLinkClick(key)}>
+            <Box key={index} onClick={() => handleLinkClick(key)} sx={{ backgroundColor: "#00000087", padding: "0 15px", marginBottom: "5px"}}>
               <Typography sx={{ fontSize: "1.5rem", textTransform: "uppercase"}}>{value.label}</Typography>
             </Box>
           ))}
         </Box>
 
-        <Box sx={{ display: "flex", justifyContent: "space-around", margin: "1.5rem 0"}}>
+        <Box sx={{ display: "flex", justifyContent: "space-around", margin: "1.5rem 0", backgroundColor: "#00000087", padding: "0 15px"}}>
           {links[activeLink].subLinks.map((sublink) => (
             <Box onClick={() => handleSublinkClick(sublink.id)}>
               <Typography>{sublink.label}</Typography>
