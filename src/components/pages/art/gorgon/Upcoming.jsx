@@ -1,3 +1,5 @@
+import { Box } from "@mui/material";
+
 export function Upcoming() {
-    return ("upcommiiiiiiig")
+  return <Box sx={{ backgroundColor: "red" }}>Upcoooooming for GORGON</Box>;
 }
