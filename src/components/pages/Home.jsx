@@ -79,7 +79,7 @@ export default function Home() {
         <Link to="/code">
           <Avatar sx={linkStyle} alt="code" src={codeImage} />
         </Link>
-        <Link to="/jazz/music">
+        <Link to="/art">
           <Avatar sx={linkStyle} alt="jazz" src={jazzImage} />
         </Link>
         <Link to="/love">
