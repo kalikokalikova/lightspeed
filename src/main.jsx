@@ -5,14 +5,11 @@ import { ThemeProvider } from "@mui/material";
 import "./index.css";
 import customTheme from "./theme.js";
 import App from "./App.jsx";
-import JazzLayout from "./components/pages/jazz/JazzLayout.jsx";
 import Home from "./components/pages/Home.jsx";
 import About from "./components/pages/About.jsx";
 import Codes from "./components/pages/Codes.jsx";
 import Love from "./components/pages/Love.jsx";
-import Art from "./components/pages/Art.jsx";
-
-import Gorgon from "./components/pages/jazz/Gorgon.jsx";
+import Art from "./components/pages/art/index.jsx";
 
 const router = createBrowserRouter([
   {
