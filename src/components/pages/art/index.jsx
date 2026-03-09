@@ -88,7 +88,7 @@ export default function Art() {
             >
               <Typography
                 sx={{
-                  fontSize: "1.7rem",
+                  fontSize: "1.5rem",
                   letterSpacing: "2px",
                   textTransform: "uppercase",
                 }}

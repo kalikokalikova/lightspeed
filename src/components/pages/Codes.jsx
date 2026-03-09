@@ -14,7 +14,7 @@ export default function Codes() {
   return (
     <Box sx={backgroundStyle}>
       <NavDrawer/>
-      <Typography>Code</Typography>
+      <Typography className="main-header">Code</Typography>
     </Box>
   )
 }

@@ -18,6 +18,7 @@ export default function About() {
   const paragraphStyle = {
     fontSize: "1.2rem",
     lineHeight: "1.5",
+    marginBottom: "20px",
   };
 
   return (
@@ -44,19 +45,26 @@ export default function About() {
             bagel-slinging, spice-mongering, and many years as a performer and
             dance teacher before becoming a software developer. She has a B.A.
             in Lingustics, which allows her to win every grammar argument on the
-            internet. At parties she gets drunk and diagrams sentences. In 2019
+            internet. At parties she gets drunk and diagrams sentences.
+          </Typography>
+
+            <Typography sx={paragraphStyle}>In 2019
             she took a detour from programming to go to law school, where she
             focused on civil rights, racial justice, and prison abolition. She
             graduated with a Masters in Jurisprudence from the University of
-            Washington with top honors.
-          </Typography>
+            Washington with top honors.</Typography>
+
           <Typography sx={paragraphStyle}>
             After more than 20 years of devotion to lindy hop and other vintage
             vernacular African American dances, she decided to become a musician
             and picked up the double bass. Her main musical inspiration is
             swinging jazz of the 1930s, but she is also influenced by the
             pre-swing New Orleans trad sound, the traditional rhythms and dances
-            of Guinea, and protest punk brass bands. By day she builds digital
+            of Guinea, and protest punk brass bands.
+          </Typography>
+
+          <Typography sx={paragraphStyle}>
+            By day she builds digital
             tools for labor organizing, and by night she plays in a seven-piece
             all ladies jazz band (The Midnight Sirens), the quartet offshoot of
             same, and at least one secret band. She is eternally grateful for
