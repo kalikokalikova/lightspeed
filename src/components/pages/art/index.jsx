@@ -63,16 +63,8 @@ export default function Art() {
   return (
     <Box sx={backgroundStyle}>
       <NavDrawer />
-      <Typography
-        variant="h1"
-        sx={{
-          color: "darkred",
-          letterSpacing: "10px",
-          whiteSpace: "nowrap",
-          fontSize: { xs: "13rem", md: "18rem" },
-          textAlign: "end",
-        }}
-      >
+      <Typography className="main-header"
+        variant="h1">
         art
       </Typography>
 

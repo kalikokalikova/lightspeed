@@ -11,3 +11,20 @@
   font-weight: 400; /* Define the weight/style */
   font-style: normal;
 }
+.main-header {
+  color: darkred;
+  letter-spacing: 10px;
+  white-space: nowrap;
+  text-align: end;
+  text-transform: uppercase;
+
+  /* Mobile-first font size (equivalent to xs) */
+  font-size: 13rem !important;
+}
+
+/* Tablet/Desktop font size (equivalent to md) */
+@media (min-width: 900px) {
+  .main-header {
+    font-size: 18rem !important;
+  }
+}

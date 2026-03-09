@@ -16,31 +16,27 @@ export default function About() {
   };
 
   const paragraphStyle = {
-    marginTop: "20px",
-    lineHeight: "1.6",
+    fontSize: "1.2rem",
+    lineHeight: "1.5",
   };
 
   return (
     <>
       <Box sx={backgroundStyle}>
+        <Typography
+            className="main-header"
+          >
+            About
+          </Typography>
         <NavDrawer />
         <Box
           sx={{
             color: "white",
-            backgroundColor: "#000000e8",
+            backgroundColor: "#000000ba",
             borderRadius: "10px",
-            margin: "10px",
-            padding: "20px",
-            mt: "250px",
+            padding: "30px",
           }}
         >
-          <Typography
-            variant="h4"
-            className="major-mono"
-            sx={{ textTransform: "uppercase" }}
-          >
-            About
-          </Typography>
           <Typography sx={paragraphStyle}>
             Calico Seders is a true renaissance woman and a hacker at heart, who
             has spent her entire life flying in the face of conventional wisdom.
