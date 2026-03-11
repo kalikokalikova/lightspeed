@@ -24,11 +24,7 @@ export default function About() {
   return (
     <>
       <Box sx={backgroundStyle}>
-        <Typography
-            className="main-header"
-          >
-            About
-          </Typography>
+        <Typography className="main-header">About</Typography>
         <NavDrawer />
         <Box
           sx={{
@@ -48,11 +44,12 @@ export default function About() {
             internet. At parties she gets drunk and diagrams sentences.
           </Typography>
 
-            <Typography sx={paragraphStyle}>In 2019
-            she took a detour from programming to go to law school, where she
-            focused on civil rights, racial justice, and prison abolition. She
-            graduated with a Masters in Jurisprudence from the University of
-            Washington with top honors.</Typography>
+          <Typography sx={paragraphStyle}>
+            In 2019 she took a detour from programming to go to law school,
+            where she focused on civil rights, racial justice, and prison
+            abolition. She graduated with a Masters in Jurisprudence from the
+            University of Washington with top honors.
+          </Typography>
 
           <Typography sx={paragraphStyle}>
             After more than 20 years of devotion to lindy hop and other vintage
@@ -64,11 +61,12 @@ export default function About() {
           </Typography>
 
           <Typography sx={paragraphStyle}>
-            By day she builds digital
-            tools for labor organizing, and by night she plays in a seven-piece
-            all ladies jazz band (The Midnight Sirens), the quartet offshoot of
-            same, and at least one secret band. She is eternally grateful for
-            the community of jazz weirdos and music nerds who have embraced her.
+            By day she builds digital tools for labor organizing, and by night
+            she plays in a seven-piece all ladies jazz band (The Midnight
+            Sirens), the quartet offshoot of same, and at least one secret band.
+            Unfortunately for everyone, she has also begun to learn the trumpet.
+            She is eternally grateful for the community of jazz weirdos and
+            music nerds who have embraced her.
           </Typography>
 
           <Typography sx={paragraphStyle}>
