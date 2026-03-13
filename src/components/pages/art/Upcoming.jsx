@@ -1,34 +1,58 @@
 import React, { useState, useEffect } from "react";
+import { Container, Box, Typography } from "@mui/material";
 
 export default function Upcoming({ category }) {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // We fetch all posts for your username
-    fetch(`https://dev.to/api/articles?username=kalikokalikova`)
+    const API_KEY = "dGmCLHeUoZT1xJuPdf2WfYccO86jwnPqtOIiLmsd0rPCUiYpC5";
+
+    fetch(
+      `https://api.tumblr.com/v2/blog/kalikokalikova/posts?api_key=${API_KEY}&limit=5`,
+    )
       .then((res) => res.json())
       .then((data) => {
-        console.log(data)
-        setPosts(data)});
+        // Tumblr wraps the data in a "response" object
+        const blogPosts = data.response.posts;
+        console.log(blogPosts);
+        setPosts(blogPosts);
+        setLoading(false);
+      })
+      .catch((err) => console.error("Tumblr Fetch Error:", err));
   }, []);
-  if (loading) return <p>Tuning the instruments...</p>;
+
+  if (loading) {
+    return <Box>Loading...</Box>;
+  }
 
   return (
-    <div className="blog-container">
+    <Container sx={{ maxWidth: "900px !important" }}>
       {posts.map((post) => (
-        <article key={post.id} className="post-card">
-          <img
-            src={
-              post.cover_image ||
-              post.social_image ||
-              "https://via.placeholder.com/600x400"
-            }
-            alt={post.title}
-          />{" "}
-          <h3>{post.title}</h3>
-        </article>
+        <Box key={post.id} sx={{ border: "1px solid chartreuse", borderRadius: "10px", backgroundColor: "#00000087", padding: "10px" }}>
+          {/* <Typography variant="h6" sx={{ marginBottom: "10px"}}>{post.summary}</Typography> */}
+
+          {/* photo post? */}
+          {post.type === "photo" && post.photos && (
+            <Box
+              component="img"
+              sx={{
+                width: "100%",
+                height: "auto",
+                borderRadius: 2,
+                mt: 2,
+              }}
+              src={post.photos[0].original_size.url}
+              alt={post.summary}
+            />
+          )}
+
+          {/* text post */}
+          {post.type === "text" && (
+            <div dangerouslySetInnerHTML={{ __html: post.body }} />
+          )}
+        </Box>
       ))}
-    </div>
+    </Container>
   );
 }
