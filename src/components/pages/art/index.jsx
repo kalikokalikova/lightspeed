@@ -3,6 +3,7 @@ import gorgonBackground from "../../../assets/gorgon.png";
 import sirenBackground from "../../../assets/siren-face-stars.png";
 import danceBackground from "../../../assets/siren.jpg";
 import upcomingBackground from "../../../assets/betterdays.jpg";
+import Newsletter from "../../newsletter";
 import { Box, Typography, Container } from "@mui/material";
 import NavDrawer from "../../NavDrawer";
 import SirenContent from "./sirens/SirenContent";
@@ -63,15 +64,19 @@ export default function Art() {
   return (
     <Box sx={backgroundStyle}>
       <NavDrawer />
-      <Typography className="main-header"
-        variant="h1">
+      <Typography className="main-header" variant="h1">
         art
       </Typography>
 
       <Box>
-        <Typography>About my art. Some more text</Typography>
-        <Box>Subscribe to newslettor</Box>
+        <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center"}}>
+          <Typography>About my art. Some more text</Typography>
+          <Box sx={{ margin: "0 12px"}}>
+            <Newsletter />
+          </Box>
+        </Box>
 
+        {/* LINKS TO ARTS */}
         <Box
           sx={{
             backgroundColor: "#00000087",
@@ -84,7 +89,12 @@ export default function Art() {
             <Box
               key={index}
               onClick={() => handleLinkClick(key)}
-              sx={{ padding: { xs: "3px 20px", md: "3px 0 "}, marginBottom: { xs: "8px", md: "initial" }, cursor: "pointer", backgroundColor: { xs: "#00000087", md: "initial"} }}
+              sx={{
+                padding: { xs: "3px 20px", md: "3px 0 " },
+                marginBottom: { xs: "8px", md: "initial" },
+                cursor: "pointer",
+                backgroundColor: { xs: "#00000087", md: "initial" },
+              }}
             >
               <Typography
                 sx={{
