@@ -3,7 +3,7 @@ import gorgonBackground from "../../../assets/gorgon.png";
 import sirenBackground from "../../../assets/siren-face-stars.png";
 import danceBackground from "../../../assets/siren.jpg";
 import upcomingBackground from "../../../assets/betterdays.jpg";
-import Newsletter from "../../newsletter";
+import Newsletter from "../../Newsletter";
 import { Box, Typography, Container } from "@mui/material";
 import NavDrawer from "../../NavDrawer";
 import SirenContent from "./sirens/SirenContent";
