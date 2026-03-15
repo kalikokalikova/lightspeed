@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Logo from "../../Logo";
 import gorgonBackground from "../../../assets/gorgon.png";
 import sirenBackground from "../../../assets/siren-face-stars.png";
 import danceBackground from "../../../assets/siren.jpg";
@@ -32,7 +33,7 @@ export default function Art() {
       element: <Upcoming />,
     },
     gorgon: {
-      label: "Gorgon",
+      label: <Logo size={70}/>,
       imageUrl: gorgonBackground,
       element: <GorgonContent />,
     },
