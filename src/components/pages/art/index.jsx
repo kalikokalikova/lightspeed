@@ -84,6 +84,7 @@ export default function Art() {
             margin: "1.5rem 0",
             display: { xs: "initial", md: "flex" },
             justifyContent: { xs: "initial", md: "space-evenly" },
+            alignItems: "center"
           }}
         >
           {Object.entries(links).map(([key, value], index) => (

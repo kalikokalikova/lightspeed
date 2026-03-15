@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 
-const Logo = ({ width, height, size = 40, color = "#832222", ...props }) => {
+const Logo = ({ width, height, size = 40, color = "darkred", ...props }) => {
   return (
     <Box
       component="svg"

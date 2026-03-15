@@ -88,7 +88,7 @@ const Newsletter = () => {
             disabled={loading}
             sx={{
               height: "48px",
-              bgcolor: "#832222", // Matching the red from your CSS
+              bgcolor: "darkred",
               "&:hover": { bgcolor: "#333333" },
             }}
           >
