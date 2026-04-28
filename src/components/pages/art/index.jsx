@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 import Logo from "../../Logo";
 import gorgonBackground from "../../../assets/gorgon.png";
-import sirenBackground from "../../../assets/siren-face-stars.png";
 import danceBackground from "../../../assets/siren.jpg";
 import upcomingBackground from "../../../assets/betterdays.jpg";
 import Newsletter from "../../Newsletter";
 import { Box, Typography, Container } from "@mui/material";
 import NavDrawer from "../../NavDrawer";
-import SirenContent from "./sirens/SirenContent";
 import GorgonContent from "./gorgon/GorgonContent";
 import Dance from "./dance/Dance";
 import Upcoming from "./Upcoming";
@@ -37,12 +35,7 @@ export default function Art() {
       imageUrl: gorgonBackground,
       element: <GorgonContent />,
     },
-    sirens: {
-      label: "The Midnight Sirens",
-      imageUrl: sirenBackground,
-      element: <SirenContent />,
-    },
-    dance: {
+    media: {
       label: "dance",
       imageUrl: danceBackground,
       element: <Dance />,
