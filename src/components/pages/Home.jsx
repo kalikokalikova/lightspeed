@@ -6,6 +6,7 @@ import loveImage from "../../assets/love.jpg";
 import { Box, Typography, Avatar } from "@mui/material";
 import { Link } from "react-router";
 import NavDrawer from "../NavDrawer";
+import { Carousel } from "../carousel/Carousel";
 
 export default function Home() {
   const backgroundStyle = {
@@ -28,13 +29,7 @@ export default function Home() {
       <NavDrawer />
 
       {/* HEADER TEXT */}
-      <Box
-        // sx={{
-        //   backgroundColor: {
-        //     md: "blue",
-        //   },
-        // }}
-      >
+      <Box>
         <Box>
           <Typography
             variant="h4"
@@ -62,6 +57,12 @@ export default function Home() {
         </Box>
       </Box>
 
+      {/* CAROUSEL */}
+      <Box sx={{  }}>
+        <Carousel />
+      </Box>
+
+
       {/* LINKS */}
       <Box
         sx={{
@@ -86,6 +87,8 @@ export default function Home() {
           <Avatar sx={linkStyle} alt="code" src={loveImage} />
         </Link>
       </Box>
+
+ 
     </Box>
   );
 }

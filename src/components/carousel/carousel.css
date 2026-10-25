@@ -1,0 +1,27 @@
+.embla {
+  /* display: flex;
+  justify-content: center; */
+}
+
+.embla__viewport {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  height: 100px;
+  background-color: white;
+  color: red;
+}
+
+.scrollers {
+  display: flex;
+  justify-content: space-between;
+}
